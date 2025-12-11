@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aayush</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="navBar" class="fixed top-0 w-full z-50">
+        <div id="navBar-inner" class="mx-auto px-4 sm:px-6 lg:px-8 border-b-4 bg-transparent">
+            <div class="flex justify-between items-center h-16">
+                <a class="text-2xl md:text-3xl font-extrabold border-b-4 border-transparent hover:border-blue-400 hover:text-blue-400" href="#">Aayush Parajuli</a>
+
+                <div class="md:hidden">
+                    <button id="menuBtn" class="text-3xl font-bold">☰</button>
+                </div>
+
+                <div class="hidden md:flex space-x-6 md:order-1 justify-end">
+                    <a class="text-2xl font-bold border-b-4 border-transparent hover:border-blue-400 hover:text-blue-400" href="#projects">Projects</a>
+                    <a class="text-2xl font-bold border-b-4 border-transparent hover:border-blue-400 hover:text-blue-400" href="#skills">Skills</a>
+                    <a class="text-2xl font-bold border-b-4 border-transparent hover:border-blue-400 hover:text-blue-400" href="#education">Education</a>
+                    <a class="text-2xl font-bold border-b-4 border-transparent hover:border-blue-400 hover:text-blue-400" href="#contacts">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden flex flex-col gap-[20px] justify-center pt-[68px]">
+        <a class="text-2xl font-bold border-b-2 pt-[20px]" href="#projects">Projects</a>
+        <a class="text-2xl font-bold border-b-2" href="#skills">Skills</a>
+        <a class="text-2xl font-bold border-b-2" href="#education">Education</a>
+        <a class="text-2xl font-bold border-b-2" href="#contacts">Contact</a>
+    </div>
+
+    <section id="hero" class="hero md:h-screen bg-gradient-to-b from-purple-700 via-blue-400 to-gray-200">
+        <div class="flex gap-3">
+            <img src="./face.png" class="w-55 md:w-200 pt-37 border-r-4">
+            <h1 class="hidden md:flex text-6xl pt-25" style="writing-mode: vertical-rl;">Seek. Play. Grow</h1>
+            
+            <div class="flex flex-col justify-end">
+                <h1 class="text-3xl md:text-8xl font-extrabold">Learning Technology bit by bit</h1>
+                <div class="flex md:gap-20 md:py-20">
+                    <a href="#projects" class="bg-blue-700 hover:bg-blue-600 rounded-lg text-xl md:text-2xl text-white px-3 py-2">Check my Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-gray-200 border-t-4 border-dotted border-gray-300">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold mb-3">Projects</h2>
+        <p class="text-gray-600 text-lg">Discover some of my projects</p>
+        </div>
+        <div class="flex flex-col md:flex-row gap-10 justify-center py-5">
+            <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center">
+                <h3 class="text-2xl font-bold mb-2">Random Walk</h3>
+                <p class="text-gray-600 mb-4">A colorful multi-agent random walk simulation.<br>To start click the canvas, double click to stop.</p>
+                <canvas id="canvas1" class="border-4 border-dashed" height="350px" width="350px"></canvas>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center">
+                <h3 class="text-2xl font-bold mb-2">Conway's Game of Life</h3>
+                <p class="text-gray-600 mb-4">The classic Conway's Game of Life but mini version.<br>Click on the canvas to start simulation.</p>
+                <canvas id="canvas2" class="border-4 border-dashed" height="350px" width="350px"></canvas>
+            </div>
+            <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center">
+                <h3 class="text-2xl font-bold mb-2">Other Projects</h3>
+                <p class="text-gray-600 mb-4">Check out my github page to see other projects!!</p>
+                <a  href="https://github.com/MoreStrings" target="_blank"><img src="./github.png" class="w-[350px]"></a>
+            </div>
+        </div>
+  </section>
+
+    <section id="skills" class="py-20 bg-gray-200 border-t-4 border-dotted border-gray-300">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold mb-4">Skills</h2>
+        <p class="text-gray-600 text-lg mb-10">
+            Tools and languages I’m getting better at.
+        </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 place-items-center">
+                <div class="bg-white shadow-md p-6 rounded-xl text-xl font-semibold w-full text-center">
+                HTML
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-xl text-xl font-semibold w-full text-center">
+                CSS / Tailwind
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-xl text-xl font-semibold w-full text-center">
+                JavaScript
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-xl text-xl font-semibold w-full text-center">
+                Python
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-xl text-xl font-semibold w-full text-center">
+                C Programming
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-xl text-xl font-semibold w-full text-center">
+                Git & GitHub
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-xl text-xl font-semibold w-full text-center">
+                Linux Basics
+                </div>
+                <div class="bg-white shadow-md p-6 rounded-xl text-xl font-semibold w-full text-center">
+                Canvas API
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  <section id="education" class="py-20 bg-gray-200 border-t-4 border-dotted border-gray-300">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-3">My Education</h2>
+      <p class="text-gray-600 text-lg">Here is my education details</p>
+    </div>
+    <div class="flex flex-col md:flex-row gap-10 justify-center py-5">
+        <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center">
+            <h3 class="text-2xl font-bold mb-2">Khwopa College of Engineering</h3>
+            <p class="text-gray-600 mb-4">I am currenty studying at Khwopa College of Engineering.<br>This is my 3rd year of the BCT program.</p>
+            <a><img src="./images.jpeg" class="w-[350px]"></a>
+
+        </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="py-20 bg-gray-200 text-black border-t-4 border-dotted border-gray-300">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <div class="space-y-6">
+        <h2 class="text-4xl font-bold">Thank You for Visiting!</h2>
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <i class="fas fa-envelope text-blue-500 text-xl"></i>
+            <span>aayushparajuli22222@gmail.com</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fas fa-phone text-blue-500 text-xl"></i>
+            <span>+977 9843-567928</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fas fa-map-marker-alt text-blue-500 text-xl"></i>
+            <span>Dadhikot, Suryabinayak-4, Bhaktapur</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <form class="bg-white p-8 rounded-2xl space-y-4 text-gray-900" action="https://formspree.io/f/mnngajlk" method="POST">
+          <h4 class="text-2xl font-semibold mb-4">In case of any query</h4>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <input
+                name="name" 
+                type="text" 
+                placeholder="Full Name" 
+                class="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                required
+            >
+            <input 
+                type="contactNumber" 
+                placeholder="Contact Number" 
+                class="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                required
+            >
+            <textarea
+              name="query"
+              placeholder="If you have any queries" 
+              rows="4" 
+              class="col-span-1 md:col-span-2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+              required></textarea>
+          </div>
+          <button 
+            type="submit" 
+            class="w-full bg-blue-600 text-white py-3 rounded-lg flex justify-center items-center gap-2 hover:bg-blue-700 transition"
+          >
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-purple-700 text-white py-2">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p>&copy; 2025 Aayush Parajuli.</p>
+    </div>
+  </footer>
+
+    <div id="cursor" class="hidden md:flex pointer-events-none fixed z-[9999] w-8 h-8 rounded-full bg-orange-500/40 border border-orange-500"></div>
+
+
+</body>
+</html>

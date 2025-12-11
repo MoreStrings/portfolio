@@ -1,0 +1,18 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Lexend', sans-serif;
+}
+
+html, body, * {
+  cursor: none !important;
+}
+
+#navBar{
+    background-color: #8200db;
+}
+
+#navBar.scrolled{
+    background-color: #e5e7eb;
+}
