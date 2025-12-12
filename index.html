@@ -11,15 +11,15 @@
 <body>
 
     <div id="navBar" class="fixed top-0 w-full z-50">
-        <div id="navBar-inner" class="mx-auto px-4 sm:px-6 lg:px-8 border-b-4 bg-transparent">
+        <div id="navBar-inner" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <a class="text-2xl md:text-3xl font-extrabold border-b-4 border-transparent hover:border-blue-400 hover:text-blue-400" href="#">Aayush Parajuli</a>
+                <a class="text-3xl font-extrabold border-b-4 border-transparent hover:border-blue-400 hover:text-blue-400" href="#">Aayush Parajuli</a>
 
                 <div class="md:hidden">
                     <button id="menuBtn" class="text-3xl font-bold">☰</button>
                 </div>
 
-                <div class="hidden md:flex space-x-6 md:order-1 justify-end">
+                <div class="hidden md:flex space-x-6 md:order-1">
                     <a class="text-2xl font-bold border-b-4 border-transparent hover:border-blue-400 hover:text-blue-400" href="#projects">Projects</a>
                     <a class="text-2xl font-bold border-b-4 border-transparent hover:border-blue-400 hover:text-blue-400" href="#skills">Skills</a>
                     <a class="text-2xl font-bold border-b-4 border-transparent hover:border-blue-400 hover:text-blue-400" href="#education">Education</a>
@@ -36,17 +36,18 @@
         <a class="text-2xl font-bold border-b-2" href="#contacts">Contact</a>
     </div>
 
-    <section id="hero" class="hero h-[40vh] md:h-[70vh] lg:h-[80vh] xl:h-screen bg-gradient-to-b from-purple-700 via-blue-400 to-gray-200">
+    <section id="hero" class="hero h-[45vh] md:h-[70vh] lg:h-screen bg-gradient-to-b from-purple-700 via-blue-400 to-gray-200">
         <div class="flex flex-col justify-end h-full">
             <div class="flex">
-                <img src="./images/face.png" class="w-55 md:w-[72%]">
+                <img src="./images/face.png" class="w-1/2 md:w-4/10">
                 <div class="border-r-4"></div>
-                <h1 class="hidden md:flex lg:text-4xl 2xl:text-6xl" style="writing-mode: vertical-rl;">Seek. Play. Grow</h1>
+                <h1 class="hidden md:flex md:text-4xl lg:text-4xl 2xl:text-6xl" style="writing-mode: vertical-rl;">Seek. Play. Grow</h1>
             
-                <div class="flex flex-col justify-end">
-                    <h1 class="text-3xl md:text-8xl font-extrabold">Learning Technology bit by bit</h1>
-                    <div class="flex md:gap-20 md:py-20">
-                        <a href="#projects" class="bg-blue-700 hover:bg-blue-600 rounded-lg text-xl md:text-2xl text-white px-3 py-2">Check my Projects</a>
+                <div class="flex flex-col justify-end ml-4 md:ml-7 gap-5 mb-10">
+                    <h1 class="text-xl md:text-6xl lg:text-6xl xl:text-8xl font-extrabold">Learning<br>Technology<br> bit by bit</h1>
+                    <p class="hidden md:flex md:text-xl">Hello, here is my brief portfolio.<br>I am Aayush Parajuli, a student interested in technology.</p>
+                    <div class="flex">
+                        <a href="#projects" class="bg-blue-700 hover:bg-blue-600 rounded-lg text-xl lg:text-2xl text-white px-3 py-2">Projects</a>
                     </div>
                 </div>
             </div>  
@@ -58,7 +59,7 @@
         <h2 class="text-4xl font-bold mb-3">Projects</h2>
         <p class="text-gray-600 text-lg">Discover some of my projects</p>
         </div>
-        <div class="flex flex-col md:flex-row gap-10 justify-center py-5">
+        <div class="flex flex-col md:flex-row md:flex-wrap gap-10 justify-center py-5">
             <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center">
                 <h3 class="text-2xl font-bold mb-2">Random Walk</h3>
                 <p class="text-gray-600 mb-4">A colorful multi-agent random walk simulation.<br>To start click the canvas, double click to stop.</p>
